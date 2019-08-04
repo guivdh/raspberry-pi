@@ -1,1 +1,3 @@
-
+pour build : sdbuild
+pour run : sdrun
+pour supprimer les images : drmi
