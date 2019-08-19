@@ -1,3 +1,8 @@
 pour build : sdbuild
+alias sdbuild='sudo docker build -t nginx .'
+
 pour run : sdrun
+alias sdrun='sudo docker run -p 80:80 -p 443:443 -p 9000:9000 --name NGINX -d nginx'
+
 pour supprimer les images : drmi
+alias drmi='sudo docker rmi (sudo docker images --filter "dangling=true" -q --no-trunc)'
