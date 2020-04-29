@@ -1,0 +1,13 @@
+pour build : sdbuild
+pour run : sdrun
+pour supprimer les images : drmi
+
+pour ajouter le certificat ssl :
+
+apt-get install software-properties-common
+add-apt-repository ppa:certbot/certbot
+
+apt install python-certbot-nginx
+
+certbot --nginx -d vh-root.be -d www.vh-root.be
+
